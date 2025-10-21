@@ -3,7 +3,7 @@
 int main()
 {
     //Variaveis para as cartas
-    int populacao1, populacao2;
+    unsigned long int populacao1, populacao2;
     int numerosdepontosturisticos1, numerosdepontosturisticos2;
     char estado1, estado2;
     char codigo1[20], codigo2[20];
@@ -92,6 +92,25 @@ int main()
     printf("Numero de Pontos Turisticos: %d\n", numerosdepontosturisticos2);
     printf("Densidade Populacional: %.2f hab/km\n", densidade2);
     printf("PIB per Capita: %.2f\n", pib_per_capita2);
+
+    
+    /*Implementação da Comparação das cartas para ver qual é a vencedora*/
+    printf("\n\nComparação das Cartas\n\n");
+
+    printf("Populção: Carta 1 venceu %d\n", populacao1 > populacao2);
+
+    printf("Àrea: Carta 1 venceu %d\n", areaemkm1 > areaemkm2);
+
+    printf("Pib: Carta 1 venceu %d\n", pib1 > pib2);
+
+    printf("Pontos Turísticos: Carta 1 venceu %d\n", numerosdepontosturisticos1 > numerosdepontosturisticos2);
+
+    printf("Densidade Populacional: Carta 2 venceu %d\n", densidade1 < densidade2);
+
+    printf("Pib Per Capita: Carta 1 venceu %d\n", pib_per_capita1 > pib_per_capita2);
+
+    printf("Super Poder: Carta 1 venceu %d\n", superpoder1 > superpoder2);
+    
 
     return 0;
 }
